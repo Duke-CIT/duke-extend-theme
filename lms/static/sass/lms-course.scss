@@ -1,0 +1,7 @@
+@import 'overrides';
+@import 'lms/static/sass/lms-course';
+
+header.global.slim h2 {
+  color: #fff;
+  text-shadow: none;
+}

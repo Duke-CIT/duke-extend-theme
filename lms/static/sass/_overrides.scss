@@ -1,0 +1,40 @@
+@import 'bourbon/bourbon';
+
+$duke-blue: #235f9c;
+$blue: $duke-blue;
+$blue-l1: tint($blue,20%);
+$blue-l2: tint($blue,40%);
+$blue-l3: tint($blue,60%);
+$blue-l4: tint($blue,80%);
+$blue-l5: tint($blue,90%);
+$blue-d1: shade($blue,20%);
+$blue-d2: shade($blue,40%);
+$blue-d3: shade($blue,60%);
+$blue-d4: shade($blue,80%);
+$blue-s1: saturate($blue,15%);
+$blue-s2: saturate($blue,30%);
+$blue-s3: saturate($blue,45%);
+$blue-u1: desaturate($blue,15%);
+$blue-u2: desaturate($blue,30%);
+$blue-u3: desaturate($blue,45%);
+$blue-t0: rgba($blue, 0.125);
+$blue-t1: rgba($blue, 0.25);
+$blue-t2: rgba($blue, 0.50);
+$blue-t3: rgba($blue, 0.75);
+
+$link-color: $blue;
+$link-color-d1: $blue-d1;
+$link-hover: $blue-l1;
+$button-color: $blue;
+$action-primary-bg: $blue;
+$action-primary-shadow: $blue-d2;
+$action-primary-focused-bg: $blue-d1;
+$action-primary-active-bg: $blue-l2;
+$action-primary-active-fg: $blue-d1;
+$action-primary-active-shadow: $blue-d2;
+$action-primary-active-focused-fg: $blue-d4;
+$action-primary-active-focused-shadow: $blue-d3;
+
+$homepage-bg-image: url('/static/images/banner.jpg');
+$header-bg: #001a57;
+$footer-bg: #001a57;
