@@ -1,4 +1,4 @@
-@import 'bourbon/bourbon';
+@import 'lms/static/sass/partials/base/variables';
 
 $duke-blue: #235f9c;
 $blue: $duke-blue;
@@ -35,6 +35,6 @@ $action-primary-active-shadow: $blue-d2;
 $action-primary-active-focused-fg: $blue-d4;
 $action-primary-active-focused-shadow: $blue-d3;
 
-$homepage-bg-image: url('/static/images/banner.jpg');
+$homepage-bg-image: url('#{$static-path}/duke-extend/images/banner.jpg');
 $header-bg: #001a57;
 $footer-bg: #001a57;
