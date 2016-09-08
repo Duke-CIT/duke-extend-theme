@@ -172,14 +172,16 @@ header.global {
 .header-global {
   .dropdown {
     background: transparent !important;
+    color: #fff !important;
   }
 
   a.user-link {
-    box-shadow: none;
+    box-shadow: none !important;
   }
 
   a.user-link:active {
     background-color: transparent !important;
+    background: none !important;
   }
 
   a.user-link:hover {
@@ -189,9 +191,15 @@ header.global {
   h2.course-header {
     color: #fff !important;
     width: auto !important;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
   }
 
   .label-username, .menu-title {
+    color: #fff !important;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+
+  .nav-global li a {
     color: #fff !important;
   }
 }
