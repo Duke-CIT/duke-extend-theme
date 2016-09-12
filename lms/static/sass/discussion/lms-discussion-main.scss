@@ -1,0 +1,17 @@
+@import 'lms/static/sass/discussion/lms-discussion-main';
+
+@import '../lms-overrides';
+
+.nav-global .nav-global-01 {
+  display: none;
+}
+
+#footer-openedx {
+  max-width: 1200px !important;
+}
+
+.menu-button, .menu-button::after {
+  color: #fff !important;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  border-top-color: #fff !important;
+}
