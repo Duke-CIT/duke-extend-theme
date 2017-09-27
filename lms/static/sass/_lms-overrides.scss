@@ -195,7 +195,8 @@ header.global {
 
     .course-header {
       color: #fff !important;
-      width: 45% !important;
+      width: auto !important;
+      max-width: 50%;
       margin-top: 8px;
       line-height: normal;
     }
@@ -213,4 +214,14 @@ header.global {
 
 .dashboard .profile-sidebar {
   border:none !important;
+}
+
+/* Hide the "Explore Courses" link on the Course Outline page,
+   Because there's not enough room in the header.
+
+   Note that the body.None selector is probably a bug in the ginkgo Course
+   Outline template, and will likely change.
+*/
+body.None ol.left.nav-global.list-inline.authenticated {
+  display: none;
 }
