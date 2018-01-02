@@ -12,8 +12,10 @@ header.global {
       box-shadow: none;
     }
 
-    .dropdown {
-      height: 25px;
+    .user-dropdown {
+      height: 35px;
+      background: transparent;
+      color: white;
     }
 
     .dropdown-menu a {
@@ -168,8 +170,9 @@ header.global {
   }
 }
 
-.header-global {
-  .dropdown {
+.header-global,
+.header-global.slim {
+  .user-dropdown, .dropdown, .js-dropdown-button {
     background: transparent !important;
     color: #fff !important;
   }
@@ -187,10 +190,16 @@ header.global {
     background: none !important;
   }
 
-  h2.course-header {
-    color: #fff !important;
-    width: auto !important;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  .wrapper-header {
+    height: auto;
+
+    .course-header {
+      color: #fff !important;
+      width: auto !important;
+      max-width: 50%;
+      margin-top: 8px;
+      line-height: normal;
+    }
   }
 
   .label-username, .menu-title {
@@ -207,10 +216,34 @@ header.global {
   border:none !important;
 }
 
+// Remove the button 'tags' on course info pages
 .course-info {
-	.heading-group {
-		button {
-			display:none;
-		}
-	}
+  .intro {
+    .heading-group {
+      button[type=button] {
+        display:none;
+      }
+    }
+  }
+}
+// Remove the register button
+.header-global {
+  .nav-global {
+    .btn-register {
+      display: none;
+    }
+  }
+}
+/* Hide the "Explore Courses" link on the Course Outline and Courserware pages,
+   Because there's not enough room in the header.
+
+   Note that the body.None selector is probably a bug in the ginkgo Course
+   Outline template, and will likely change.
+*/
+body.None, body.view-in-course, body.view-course-info {
+  .header-global {
+    .nav-global {
+      display: none;
+    }
+  }
 }
