@@ -216,12 +216,34 @@ header.global {
   border:none !important;
 }
 
-/* Hide the "Explore Courses" link on the Course Outline page,
+// Remove the button 'tags' on course info pages
+.course-info {
+  .intro {
+    .heading-group {
+      button[type=button] {
+        display:none;
+      }
+    }
+  }
+}
+// Remove the register button
+.header-global {
+  .nav-global {
+    .btn-register {
+      display: none;
+    }
+  }
+}
+/* Hide the "Explore Courses" link on the Course Outline and Courserware pages,
    Because there's not enough room in the header.
 
    Note that the body.None selector is probably a bug in the ginkgo Course
    Outline template, and will likely change.
 */
-body.None ol.left.nav-global.list-inline.authenticated {
-  display: none;
+body.None, body.view-in-course, body.view-course-info {
+  .header-global {
+    .nav-global {
+      display: none;
+    }
+  }
 }
